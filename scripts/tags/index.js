@@ -57,3 +57,7 @@ hexo.extend.tag.register('subsubtabs', postTabs, true);
 const postVideo = require('./video');
 
 hexo.extend.tag.register('video', postVideo);
+
+
+const jp = require('./jp')(hexo);
+hexo.extend.tag.register('jp', jp);

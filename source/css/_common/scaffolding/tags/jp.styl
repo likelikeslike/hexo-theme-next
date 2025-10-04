@@ -1,0 +1,25 @@
+.hiragana { color: #1b5e20; font-size: 1.2rem; }
+.katakana { color: #143fc1ff; font-size: 1.2rem; }
+.kanji    { font-weight: 600; }
+ruby {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  vertical-align: bottom;
+  margin: 0 0.25em;
+}
+
+ruby rt {
+  font-size: 0.6em;
+  color: #d32f2f;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+ruby rb,
+ruby > :first-child {
+  display: inline-block;
+  color: #14a9c1;
+  white-space: nowrap;
+}
