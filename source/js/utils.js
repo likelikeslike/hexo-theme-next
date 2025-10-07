@@ -138,6 +138,15 @@ NexT.utils = {
     });
   },
 
+  findEmptyTableHeader() {
+    document.querySelectorAll('thead').forEach(element => {
+      const isEmpty = [...element.querySelectorAll('th')].every(th => th.innerHTML.trim() === '');
+      if (isEmpty) {
+        element.classList.add('empty');
+      }
+    });
+  },
+
   registerVideoIframe() {
     document.querySelectorAll('iframe').forEach(element => {
       const supported = [
